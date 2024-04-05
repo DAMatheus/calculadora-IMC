@@ -5,26 +5,32 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(73, 60, 60);
+    background-color: rgb(19, 17, 17);
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh; /* Define a altura mínima da tela inteira */
 }
-
+#hr {
+    width: 2px;
+    height: 300px; /* Altura desejada da linha */
+    background-color: #00B208;
+    margin: 0 10px; /* Espaçamento entre a linha e as divs */
+}
 #container {
     border-radius: 10px;
-    background-color: rgb(41, 30, 30);
+    background-color: rgb(26, 21, 21);
+    height: 500px;
     width: 900px;
     display: flex;
-    flex-direction: row; /* Empilha os elementos verticalmente */
-    align-items: center; /* Centraliza os elementos horizontalmente */
+    flex-direction: row;
+    align-items: center;
     padding: 10px;
+    overflow: hidden; /* Oculta conteúdo que excede a altura da div */
 }
 
 #imagem {
-    background-color: rgb(41, 30, 30);
     border-radius: 10px;
     height: 400px;
     width: 45%;
@@ -62,7 +68,7 @@ body {
     border-radius: 3px;
     margin: 3px 0px 30px 0px;
     padding: 1.3rem;
-    width: 300px;
+    width: 91%;
     font-size: 1.4em;
 }
 #input-field input{
@@ -93,4 +99,34 @@ body {
     font-size: 1.3rem;
     cursor: pointer;
 
+}
+
+#resultado{
+    background-color: red;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+}
+#resultado p {
+    font-size: 3em;
+    text-align: center;
+}
+
+
+#resultbox {
+    display: none;
+    margin-top: 20px;
+    align-content: space-between;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#resultrow{
+    width: 2px;
+    height: 60px; /* Altura desejada da linha */
+    background-color: #00B208;
+    margin: 0 10px; /* Espaçamento entre a linha e as divs */
 }

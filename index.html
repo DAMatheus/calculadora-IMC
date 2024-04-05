@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Caixa do meio, com imagem e dados-->
     <div id="container">
         <div id="imagem">
             <img src="images/pesos.png" alt="">
         </div>
+        <div id="hr"></div>
         <div id="calculadora">
             <h1>Calculadora - IMC</h1>
             <!-- Input de altura-->
@@ -45,9 +45,19 @@
                 </div>
             </div>
             <!-- Fim do input de peso-->
-            <button id="verificar">Verificar</button>
+            <button id="verificar" onclick="resultado()">Verificar</button>
+            <div id="resultbox">
+                <div id="resultado">
+                </div>
+                <div id="resultrow"></div>
+                <div id="indice">
+                    <p>Resultado vai aparecer aqui</p>      
+                </div>
+            </div>
+
         </div>
-        </body>
     </div>
-    <!-- Fim da caixa do meio, com imagem e dados-->
+    <script src="script.js"></script>
+</body>
 </html>
+
